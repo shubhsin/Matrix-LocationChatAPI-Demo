@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matrix Location Based Chat</title>
+</head>
+<body>
+	<hr>
+	<form method="post" action="createroom.cgi">
+		<h3>Create Chat Room</h3>
+		<input type="text" name="roomname" placeholder="chatroom name" autofocus></input>
+		<br>
+		<input type="text" name="roomowner" placeholder="room owner name"></input>
+		<br>
+		<input type="text" name="roomlat" placeholder="room latitude"></input>
+		<br>
+		<input type="text" name="roomlong" placeholder="room longitude"></input>
+		<br>
+		<input type="submit" name="submitroom" value="Create Chat Room"></input>
+		<br>
+	</form>
+	<hr>
+	<form method="post" action="viewrooms.cgi">
+		<h3>View Chat Rooms</h3>
+		<input type="submit" name="viewroom" value="View All Chat Rooms"></input>
+		<br>
+	</form>
+	<form method="post" action="viewroomsjson.cgi">
+		<input type="submit" name="viewroomjson" value="View All Chat Rooms JSON"></input>
+		<br>
+	</form>
+	<hr>
+	<form method="post" action="addperson.cgi">
+		<h3>Add to Existing Chat Room</h3>
+		<input type="text" name="personname" placeholder="Name or id here"></input>
+		<br>
+		<input type="text" name="chatroomname" placeholder="Existing Chat room name"></input>
+		<br>
+		<input type="submit" name="addpersonbutton" value="Add to Chat Room"></input>
+		<br>
+	</form>
+	<hr>
+	<form method="post" action="viewnearbuy.cgi">
+		<h3>View Nearbuy/Location based Chat Rooms</h3>
+		<input type="text" name="latitudetextfield" placeholder="Latitude"></input>
+		<br>
+		<input type="text" name="longitudetextfield" placeholder="Longitude"></input>
+		<br>
+		<input type="submit" name="viewnearbuybutton" value="View Nearbuy Chatrooms"></input>
+		<br>
+	</form>
+	<hr>
+</body>
+</html>
